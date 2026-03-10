@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: order-service-feign   # FIX spelling if needed
+    name: order-service-feign
 
 eureka:
   client:
