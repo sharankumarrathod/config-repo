@@ -5,7 +5,6 @@ spring:
   cloud:
     gateway:
       routes:
-
         - id: order-service
           uri: http://localhost:8082
           predicates:
