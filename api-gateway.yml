@@ -8,3 +8,10 @@ spring:
               uri: lb://PRODUCT-SERVICE
               predicates:
                 - Path=/products/**
+    loadbalancer:
+      cache:
+        enabled: false
+
+eureka:
+  instance:
+    prefer-ip-address: true
