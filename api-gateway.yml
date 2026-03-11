@@ -8,6 +8,10 @@ spring:
               uri: lb://PRODUCT-SERVICE
               predicates:
                 - Path=/products/**
+            - id: notification-consumer
+              uri: lb://NOTIFICATION-CONSUMER
+              predicates:
+                - Path=/notifications/**
     loadbalancer:
       cache:
         enabled: false
