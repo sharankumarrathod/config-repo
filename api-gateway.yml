@@ -19,3 +19,11 @@ spring:
 eureka:
   instance:
     prefer-ip-address: true
+
+resilience4j:
+  ratelimiter:
+    instances:
+      apiGatewayRateLimiter:
+        limit-for-period: 5           # allow 5 requests
+        limit-refresh-period: 10s     # per 10 seconds
+        timeout-duration: 0s          # don't wait, reject immediately
