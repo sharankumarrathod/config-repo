@@ -23,3 +23,7 @@ eureka:
 jwt:
   secret: mySecretKey12345678901234567890123456  # min 32 chars
   expiration: 3600000  # 1 hour in milliseconds
+
+  spring:
+  profiles:
+    active: dev
