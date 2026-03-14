@@ -5,7 +5,7 @@ spring:
   application:
     name: product-service
   datasource:
-    url: jdbc:mysql://localhost:3306/uber
+    url: jdbc:mysql://localhost:3306/spring_security
     username: root
     password: sharan@rathod123R
     driver-class-name: com.mysql.cj.jdbc.Driver
